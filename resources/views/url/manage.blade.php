@@ -25,7 +25,8 @@
 					{!! Form::label('url', 'URL to shorten',['class' => 'control-label']) !!}
 					{!! Form::text('url', null, ['class' => 'form-control']) !!}
 					</div>
-					{!! Form::token() !!}
+					<!--{!! Form::token() !!} -->
+					{!! csrf_field() !!}
 					{!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
 
 				{!! Form::close() !!}
