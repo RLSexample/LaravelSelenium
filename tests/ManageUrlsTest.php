@@ -33,7 +33,7 @@ class ManageUrlsTest extends TestCase
             ->submitForm('Save', [
                'url' => 'http://www.abc.net.au',
             ])
-            ->seePageIs('/manage-url');
+            ->seePageIs('/manage-url')
             ->assertResponseOk();
     }
 
