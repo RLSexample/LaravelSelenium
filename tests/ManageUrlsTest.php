@@ -30,11 +30,11 @@ class ManageUrlsTest extends TestCase
     public function testCanSaveUrl()
     {
         $this->visit('/manage-url')
-           // ->submitForm('Save', [
-          //      'url' => 'http://www.abc.net.au'
-        //    ])
+            ->submitForm('Save', [
+               'url' => 'http://www.abc.net.au',
+            ])
             ->seePageIs('/manage-url');
-           // ->assertResponseOk();
+            ->assertResponseOk();
     }
 
     /**
