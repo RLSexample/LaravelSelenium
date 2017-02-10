@@ -13,23 +13,23 @@
 
     <div class="container-fluid">
         <div class="row">
-<div class="well">
-    {!! Form::open(
-    [
-        'route' => 'manage-route',
-        'class' => 'form-inline'
-    ]
-    ) !!}
+			<div class="well">
+				{!! Form::open(
+					[
+						'route' => 'manage-route',
+						'class' => 'form-inline'
+					]
+				) !!}
 
-<div class="form-group">
-{!! Form::label('url', 'URL to shorten') !!}
-{!! Form::text('url', null, ['class' => 'form-control']) !!}
-</div>
-{!! Form::token() !!}
-{!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+					<div class="form-group">
+					{!! Form::label('url', 'URL to shorten',['class' => 'control-label']) !!}
+					{!! Form::text('url', null, ['class' => 'form-control']) !!}
+					</div>
+					{!! Form::token() !!}
+					{!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
 
-{!! Form::close() !!}
-</div>
+				{!! Form::close() !!}
+			</div>
         </div>
     </div>
 @endsection
