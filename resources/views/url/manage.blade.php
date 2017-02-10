@@ -14,12 +14,8 @@
     <div class="container-fluid">
         <div class="row">
 			<div class="well">
-				{!! Form::open(
-					[
-						'route' => 'manage-route',
-						'class' => 'form-inline'
-					]
-				) !!}
+				{!! Form::open(['route' => 'manage-route',
+						        'class' => 'form-inline']) !!}
 
 					<div class="form-group">
 					{!! Form::label('url', 'URL to shorten',['class' => 'control-label']) !!}
