@@ -30,8 +30,8 @@ class UrlController extends Controller
         if ($request->isMethod('post')) {
             if ($request->has('url')) {
                 $this->validate($request, [
-                   // 'url' => 'required|url|unique:urls,original_url',
-					 'url' => 'required|url',
+                    'url' => 'required|url|unique:urls,original_url',
+
                 ]);
 
                 $this->saveAndFlash($request, $session, $shortener);
