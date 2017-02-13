@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'pgsql2'),
 
     /*
     |--------------------------------------------------------------------------
@@ -78,6 +78,18 @@ return [
             'prefix' => '',
             'schema' => 'public',
         ],
+		'pgsql2' => [
+            'driver' => 'pgsql',
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'development'),
+            'username' => env('DB_USERNAME', 'homestead'),
+            'password' => env('DB_PASSWORD', 'secret'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+        ],
+		
 
     ],
 
